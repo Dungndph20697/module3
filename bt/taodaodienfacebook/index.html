@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-weight: bold;
+            font-size: 20px;
+            color: #1877f2;
+        }
+
+        header .search input {
+            padding: 6px 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            width: 200px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:240px 1fr 240px;
+            gap: 16px;
+            max-width: 1200px;
+            margin: 72px auto 16px;
+            padding: 0 16px;
+        }
+
+        aside, main {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        aside ul li:hover {
+            background: #f0f2f5;
+            border-radius: 6px;
+        }
+
+        .composer {
+            background: #fff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+
+        .composer input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .post {
+            background: #fff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+        }
+
+        .post .author {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .post .content {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">miniFB</div>
+    <div class="search"><input type="text" placeholder="Tìm kiếm trên Facebook"></div>
+    <div class="actions">🙂 🔔</div>
+</header>
+
+
+<div class="container">
+    <aside>
+        <ul>
+            <li>Trang chủ</li>
+            <li>Bạn bè</li>
+            <li>Marketplace</li>
+            <li>Watch</li>
+            <li>Kỷ niệm</li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <div class="composer">
+            <input type="text" placeholder="Bạn đang nghĩ gì?">
+        </div>
+
+
+        <div class="post">
+            <div class="author">Nguyễn Văn A</div>
+            <div class="content">Hôm nay trời thật đẹp! ☀️</div>
+        </div>
+
+
+        <div class="post">
+            <div class="author">Trần Thị B</div>
+            <div class="content">Một ngày làm việc năng suất 💻</div>
+        </div>
+    </main>
+
+
+    <aside>
+        <ul>
+            <li>Người liên hệ 1</li>
+            <li>Người liên hệ 2</li>
+            <li>Người liên hệ 3</li>
+        </ul>
+    </aside>
+</div>
+</body>
+</html>
